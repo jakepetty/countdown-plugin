@@ -1,0 +1,15 @@
+{
+    "name": "developer/coming_soon",
+    "description": "A jQuery plugin designed to work with Twitter Bootstrap",
+    "type": "project",
+    "require": {
+        "twbs/bootstrap": "^4.3",
+        "components/jquery": "^3.3"
+    },
+    "authors": [
+        {
+            "name": "Jake Petty",
+            "email": "support@vexcon.net"
+        }
+    ]
+}

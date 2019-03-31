@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countdown Example</title>
+    <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container h-100">
+        <div id="countdown" class="row h-100 justify-content-center align-items-center"></div>
+    </div>
+    <script src="vendor/components/jquery/jquery.min.js"></script>
+    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/countdown.jquery.js"></script>
+    <script>
+        $('#countdown').countdown({
+            year: 2020 // 2020-01-01 00:00:00
+        });
+    </script>
+</body>
+
+</html>
