@@ -4,7 +4,9 @@ body {
   height: 100%;
   margin: 0;
   font-family: Lato, sans-serif;
-  background-color: #000;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .wrapper {
   text-align: center;
@@ -17,4 +19,8 @@ body {
   font-size: 2em;
   display: block;
   color: #aaa;
+}
+.bg {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
 }
