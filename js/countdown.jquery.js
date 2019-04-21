@@ -36,18 +36,19 @@
 				// Define variables being used
 				var container, wrapper, time, label;
 
-				// Create elemnt container
+				// Create elements container
 				container = $('<div/>').addClass('col-xs-6 col-sm-3').attr('id', k);
 
-				// Create wrapper clement
+				// Create wrapper element
 				wrapper = $('<div/>').addClass('wrapper');
 
-				// Create time clement
+				// Create time element
 				time = $('<span/>').addClass('time').text(v < 10 ? '0' + v : v.toLocaleString());
 
 				if (settings.labels) {
-					// Create label clement
+					// Create label element
 					label = $('<span/>').addClass('label').text((v === 1 ? $.fn.countdown.singularize(k) : k));
+
 					// Add everything to container element
 					container.append(wrapper.append(time).append(label));
 				} else {
@@ -71,7 +72,7 @@
 		// Check if target date has beeen reached
 		if (settings.target_reached) {
 
-			// Executetes function once timer reaches zero
+			// Executes function once timer reaches zero
 			settings.onFinish();
 
 		} else {
@@ -83,7 +84,7 @@
 		}
 	};
 
-	// Removes the S in days hours minutes seconds
+	// Removes the trailing S in days hours minutes seconds
 	$.fn.countdown.singularize = function (str) {
 		return str.substr(0, str.length - 1);
 	};
@@ -110,7 +111,7 @@
 			settings.target_reached = true;
 		}
 
-		// Built deturn object
+		// Built return object
 		remaining.days = Math.floor(timeleft / (24 * 60 * 60 * 1000));
 		remaining.hours = Math.floor((timeleft / (24 * 60 * 60 * 1000) - remaining.days) * 24);
 		remaining.minutes = Math.floor(((timeleft / (24 * 60 * 60 * 1000) - remaining.days) * 24 - remaining.hours) * 60);
